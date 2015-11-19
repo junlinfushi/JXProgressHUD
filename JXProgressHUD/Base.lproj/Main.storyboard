@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g23-Np-fQe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QuI-Y9-p31">
+            <objects>
+                <navigationController id="g23-Np-fQe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iua-vO-DOt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="21z-oe-lIS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHb-SV-U5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="463"/>
+        </scene>
+        <!--JXHUD-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFS-ro-paU">
+                                <rect key="frame" x="164" y="250" width="46" height="30"/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <segue destination="if4-DW-Ecn" kind="push" id="b2P-GF-Dmp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="JXHUD" id="DQU-KZ-uom"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="429.5"/>
+        </scene>
+        <!--样式-->
+        <scene sceneID="Zdc-Rs-U5F">
+            <objects>
+                <viewController id="if4-DW-Ecn" customClass="TwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wou-Xo-2fU"/>
+                        <viewControllerLayoutGuide type="bottom" id="QrL-Bm-S8U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KrE-o3-SQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxI-VG-ASE">
+                                <rect key="frame" x="75" y="176" width="46" height="30"/>
+                                <state key="normal" title="文字1"/>
+                                <connections>
+                                    <action selector="text:" destination="if4-DW-Ecn" eventType="touchUpInside" id="Xfz-Qv-Iw1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7K-J9-CeJ">
+                                <rect key="frame" x="75" y="231" width="46" height="30"/>
+                                <state key="normal" title="成功1"/>
+                                <connections>
+                                    <action selector="success:" destination="if4-DW-Ecn" eventType="touchUpInside" id="um1-mq-jEd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wJ-MI-h2H">
+                                <rect key="frame" x="75" y="281" width="46" height="30"/>
+                                <state key="normal" title="失败1"/>
+                                <connections>
+                                    <action selector="error:" destination="if4-DW-Ecn" eventType="touchUpInside" id="a9x-El-dTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-bg-rG6">
+                                <rect key="frame" x="29" y="331" width="138" height="30"/>
+                                <state key="normal" title="加载中1"/>
+                                <connections>
+                                    <action selector="loadingToWindow:" destination="if4-DW-Ecn" eventType="touchUpInside" id="UIX-RV-bSp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naS-WW-jbG">
+                                <rect key="frame" x="210" y="331" width="93" height="30"/>
+                                <state key="normal" title="加载中2"/>
+                                <connections>
+                                    <action selector="loadingToView:" destination="if4-DW-Ecn" eventType="touchUpInside" id="Nn8-gA-vrh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY8-vG-qKV">
+                                <rect key="frame" x="214" y="176" width="89" height="30"/>
+                                <state key="normal" title="文字2"/>
+                                <connections>
+                                    <action selector="text:" destination="if4-DW-Ecn" eventType="touchUpInside" id="sKD-Kv-4ku"/>
+                                    <action selector="textToView:" destination="if4-DW-Ecn" eventType="touchUpInside" id="bGW-rg-6Ux"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9As-H9-DAt">
+                                <rect key="frame" x="211" y="231" width="92" height="30"/>
+                                <state key="normal" title="成功2"/>
+                                <connections>
+                                    <action selector="success:" destination="if4-DW-Ecn" eventType="touchUpInside" id="xx5-wb-ibh"/>
+                                    <action selector="successToView:" destination="if4-DW-Ecn" eventType="touchUpInside" id="CRH-um-fRX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dr-S4-FaV">
+                                <rect key="frame" x="219" y="281" width="79" height="30"/>
+                                <state key="normal" title="失败2"/>
+                                <connections>
+                                    <action selector="error:" destination="if4-DW-Ecn" eventType="touchUpInside" id="dU3-yf-hu7"/>
+                                    <action selector="errorToView:" destination="if4-DW-Ecn" eventType="touchUpInside" id="6W3-BH-W8q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="导航栏可返回" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0C-mh-WKQ">
+                                <rect key="frame" x="204" y="131" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="导航栏不可返回" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deh-6l-p12">
+                                <rect key="frame" x="44" y="131" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="样式" id="Aft-fI-63n"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wq4-Sx-TuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>
